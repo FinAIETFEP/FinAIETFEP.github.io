@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinAIETFEP: 智慧 ETF 探索平台</title>
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 使用 Inter 字體 */
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1A1C2C',       /* 深黑藍 */
+                        'gold': '#E6B800',          /* 主金色 - 更新為更亮眼的金色 */
+                        'accent-light': '#FFD700',  /* 輔助金色 (亮金色) - 更新為純金色 */
+                        'bg-light': '#f4f7f9',      /* 淺色背景 */
+                        'text-dark': '#1A1C2C',     /* 深色文字 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bg-light text-text-dark antialiased">
+
+    <!-- 頁面頂部導覽列 -->
+    <nav class="bg-white shadow-md p-4 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- 導覽列左上角替換為簡化 Logo (圖二) -->
+            <img src="image_3c7bf9.jpg" alt="FinAIETFEP Logo" class="h-8 w-auto">
+            
+            <div class="space-x-4 hidden sm:block">
+                <a href="#features" class="text-text-dark hover:text-gold">核心特色</a>
+                <a href="#about" class="text-text-dark hover:text-gold">關於我們</a>
+                <a href="#contact" class="text-text-dark hover:text-gold">聯繫我們</a>
+            </div>
+            <!-- CTA 按鈕改為金色 -->
+            <a href="[Your_App_URL_Here]" class="bg-gold text-white px-4 py-2 rounded-lg hover:bg-accent-light transition duration-300 shadow-md">立即使用</a>
+        </div>
+    </nav>
+
+    <!-- 標題與主視覺區塊 -->
+    <header class="bg-white pt-10 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- H1 標題改為深色 -->
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-primary mb-4">FinAIETFEP: 智慧 ETF 數據分析與決策平台</h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">🚀 **AI 驅動，輕鬆理解與應用 ETF 數據！**</p>
+            
+            <!-- 主視覺 Logo (圖一) -->
+            <div class="flex justify-center mb-8">
+                <img src="image_3c7b9f.jpg" alt="FinAIETFEP 正版 Logo 與儀表板模擬圖" class="w-full max-w-lg rounded-xl shadow-2xl transition duration-500 hover:scale-[1.01]" 
+                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/1A1C2C/E6B800?text=FinAIETFEP+Logo'" >
+            </div>
+
+            <!-- 專案簡介背景改為淺金色 -->
+            <div class="bg-gold/10 p-6 rounded-xl shadow-inner mb-8">
+                <p class="text-lg font-medium text-gray-700">FinAIETFEP 是一個旨在解決「一般使用者難以消化和應用複雜 ETF 數據」痛點的創新平台</p>
+                <p class="mt-3 text-base">我們利用人工智慧（AI）技術，將海量的 ETF 數據轉化為**簡潔的、可行動的、易於理解的數據洞察**，無論您是個人投資者、企業數據使用者，還是金融專業人士，FinAIETFEP 都能幫助您：</p>
+                <!-- 列表文字改為金色，勾選符號改為輔助金色 -->
+                <ul class="mt-4 flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8 text-gold font-semibold">
+                    <li><span class="text-accent-light">✓</span> **看懂：** 透過 AI 摘要，快速掌握 ETF 的核心價值與風險。</li>
+                    <li><span class="text-accent-light">✓</span> **決策：** 藉由互動式分析工具，高效地進行數據比較與篩選。</li>
+                    <li><span class="text-accent-light">✓</span> **應用：** 更有效率地將 ETF 數據整合到您的投資或業務分析流程中。</li>
+                </ul>
+            </div>
+
+            <!-- 狀態/標籤欄 -->
+            <div class="flex justify-center space-x-6 text-sm text-gray-500 font-medium">
+                <span>狀態: ✨ **開發中**</span>
+                <span>最新版本: v1.0.0</span>
+                <span class="hidden sm:inline">適用對象: 一般投資者、決策者、金融專業人士等想快速搜尋 ETF 資料的人</span>
+            </div>
+            
+            <!-- CTA 按鈕改為金色 -->
+            <a href="[Your_App_URL_Here]" class="mt-8 inline-block bg-gold text-white px-8 py-3 rounded-full hover:bg-accent-light transition duration-300 text-lg font-bold shadow-xl transform hover:scale-105">
+                立即體驗數據洞察 →
+            </a>
+        </div>
+    </header>
+
+    <!-- 核心特色區塊 -->
+    <section id="features" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- H2 標題改為深色 -->
+            <h2 class="text-3xl font-bold text-center text-primary mb-10">✨ 核心特色：為高效數據應用而設計</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- 特色卡片邊框和標題圖示改為金色 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-3 flex items-center"><span class="text-gold mr-2">📝</span> AI 數據白話文摘要</h3>
+                    <p class="text-gray-600 text-sm">自動為任何 ETF 報告生成簡單、直接的洞察總結，無需再被專業術語和冗長文件困擾。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-3 flex items-center"><span class="text-gold mr-2">💡</span> 視覺化介面與智能比較</h3>
+                    <p class="text-gray-600 text-sm">提供直觀的解答，讓使用者能快速篩選、比較和分析不同 ETF 的績效、費用和組成。</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-gold">
+                    <h3 class="text-xl font-bold mb-3 flex items-center"><span class="text-gold mr-2">📈</span> 數據應用介面 (API)</h3>
+                    <p class="text-gray-600 text-sm">為專業用戶提供乾淨的 API 介面，便於將數據整合到企業的內部系統或分析模型中。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 廣泛影響力區塊 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- H2 標題改為深色 -->
+            <h2 class="text-3xl font-bold text-primary mb-6">💼 廣泛的影響力：提升數據使用效率</h2>
+            <p class="text-lg text-gray-700 mb-8">FinAIETFEP 的價值在於在顧及準確性的情況下提升金融數據的使用效率：</p>
+            <div class="flex flex-col sm:flex-row justify-around space-y-6 sm:space-y-0 sm:space-x-8">
+                <div class="w-full sm:w-1/2 p-4 bg-bg-light rounded-lg shadow-inner">
+                    <!-- H3 標題改為金色 -->
+                    <h3 class="text-xl font-bold mb-2 text-gold">個人決策優化</h3>
+                    <p class="text-gray-600">幫助個人使用者高效獲取必要資訊，使使用者能快速獲取想要的資訊。</p>
+                </div>
+                <div class="w-full sm:w-1/2 p-4 bg-bg-light rounded-lg shadow-inner">
+                    <!-- H3 標題改為金色 -->
+                    <h3 class="text-xl font-bold mb-2 text-gold">企業數據應用</h3>
+                    <p class="text-gray-600">成為企業內部數據分析、報告生成和業務規劃的可靠工具，確保數據洞察的一致性。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 關於我們區塊 -->
+    <section id="about" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- H2 標題改為深色 -->
+            <h2 class="text-3xl font-bold text-center mb-10 text-primary">關於我們 (About Us)</h2>
+
+            <div class="max-w-4xl mx-auto text-center mb-12">
+                <h3 class="text-2xl font-semibold mb-3">我們的願景</h3>
+                <p class="text-gray-700 leading-relaxed">我們相信，精準的金融數據分析不應該是少數專家的專利，FinAIETFEP 團隊的目標是**民主化 ETF 數據洞察**，讓每位使用者都能借助 AI 的力量，自信、準確地理解和高效應用 ETF 這種主流的投資工具。</p>
+                <p class="text-gray-700 mt-4 leading-relaxed">我們致力於將複雜的 AI 和數據工程技術，轉化為對使用者友善、且具備高實用性的數據分析工具。</p>
+            </div>
+
+            <!-- 核心團隊 -->
+            <div class="flex justify-center items-center mb-12">
+                <!-- 簡化 Logo (圖二) -->
+                <img src="image_3c7bf9.jpg" alt="FinAIETFEP 簡化 Logo" class="w-1/2 max-w-sm rounded-lg shadow-xl" 
+                    onerror="this.onerror=null; this.src='https://placehold.co/400x150/1A1C2C/E6B800?text=FinAIETFEP+Simplified+Logo'">
+            </div>
+            
+            <!-- H3 標題改為深色 -->
+            <h3 class="text-2xl font-semibold text-center mb-8 text-primary">核心團隊 (Meet the Team)</h3>
+            <div class="flex flex-col sm:flex-row justify-center gap-10">
+                
+                <!-- 團隊成員 1：張三 -->
+                <div class="text-center w-full sm:w-1/3 p-6 bg-white rounded-xl shadow-lg">
+                    <!-- 大頭照 placeholder 邊框改為金色 -->
+                    <img src="https://placehold.co/120x120/1A1C2C/E6B800?text=JS" alt="張三 大頭照" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-gold">
+                    <h4 class="text-xl font-bold mb-1">張三 (San Chang)</h4>
+                    <!-- 角色文字改為金色 -->
+                    <p class="text-gold font-medium">專案架構師 & 首席 AI 工程師</p>
+                    <p class="text-sm text-gray-500 mt-2">專注於自然語言處理與金融建模</p>
+                </div>
+
+                <!-- 團隊成員 1：張三 -->
+                <div class="text-center w-full sm:w-1/3 p-6 bg-white rounded-xl shadow-lg">
+                    <!-- 大頭照 placeholder 邊框改為金色 -->
+                    <img src="https://placehold.co/120x120/1A1C2C/E6B800?text=JS" alt="張三 大頭照" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-gold">
+                    <h4 class="text-xl font-bold mb-1">張三 (San Chang)</h4>
+                    <!-- 角色文字改為金色 -->
+                    <p class="text-gold font-medium">專案架構師 & 首席 AI 工程師</p>
+                    <p class="text-sm text-gray-500 mt-2">專注於自然語言處理與金融建模</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 技術概述與貢獻 -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- H3 標題改為深色 -->
+            <h3 class="text-2xl font-bold text-center mb-8 text-primary">🛠️ 技術概述與貢獻 (Technical & Contribution)</h3>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <!-- 技術概述 -->
+                <div class="lg:w-1/2 bg-white p-6 rounded-xl shadow-lg">
+                    <h4 class="text-xl font-bold mb-4">技術概述 (僅供好奇者參考)</h4>
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="text-sm text-gray-500 border-b">
+                                <th class="py-2">分類</th>
+                                <th class="py-2">主要技術</th>
+                                <th class="py-2">簡介</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="py-2 font-medium">數據科學與 AI</td>
+                                <td class="py-2">Python, Pandas, OpenAI API / 專屬模型</td>
+                                <td class="py-2 text-sm text-gray-600">核心數據處理、智能摘要與洞察生成。</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-2 font-medium">使用者介面</td>
+                                <td class="py-2">Gradio</td>
+                                <td class="py-2 text-sm text-gray-600">打造快速、響應式的數據儀表板。</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 font-medium">後端</td>
+                                <td class="py-2">yfinance</td>
+                                <td class="py-2 text-sm text-gray-600">數據來源。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 貢獻與支持 背景改為淺金色，文字改為金色 -->
+                <div class="lg:w-1/2 bg-gold/10 p-6 rounded-xl shadow-lg flex flex-col justify-center">
+                    <h4 class="text-xl font-bold mb-4 text-gold">🤝 貢獻與支持</h4>
+                    <p class="text-gray-700 mb-4">FinAIETFEP 是一個開源專案，我們歡迎所有形式的貢獻，無論是：</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li>報告您發現的 Bug (Issue Tracker)。</li>
+                        <li>提出改善使用者介面或數據處理流程的新功能建議。</li>
+                        <li>提供數據源或數據應用的建議。</li>
+                    </ul>
+                    <!-- 感謝語改為深色 -->
+                    <p class="mt-6 font-semibold text-center text-primary">感謝您與我們一同提升 ETF 數據的透明度和使用效率！</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁腳與聯繫方式 -->
+    <footer id="contact" class="bg-text-dark text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h4 class="text-xl font-bold mb-4">✉️ 聯繫我們</h4>
+            <p class="mb-2">有任何疑問或合作提案？請通過以下方式聯繫我們：</p>
+            <!-- 連結文字改為金色 -->
+            <div class="space-y-1 mb-6">
+                <p>Github: <a href="mailto:support@finaieffep.org" class="text-gold hover:underline">support@finaieffep.org</a></p>
+            </div>
+            
+            <div class="mt-6 pt-4 border-t border-gray-700">
+                <!-- 連結文字改為金色 -->
+                <p class="text-sm">&copy; 2025 FinAIETFEP. All rights reserved. | <a href="[Link_to_GitHub_README]" class="text-gold hover:underline">前往 GitHub 專案</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
